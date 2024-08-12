@@ -1,0 +1,34 @@
+$primary-color: #f7e9e9;
+$secondary-color: #f7c3f7;
+$background-color: #faf3f8;
+$background-color2: #f8d7f0;
+$background-color3: #d7f4f8;
+$text-color: #000000;
+$color-frase: #ec3e09 ;
+$color-frase2:#f510b0;
+$color-caja: #2a2ab4;
+$color-caja2:  #000000;
+$background-frase:  #c1eedf;
+$color-preguntas: #ffffff;
+$descri2:  #1172f0;
+$link-color:  #02070e;
+$descri3:  darkgreen;
+$descri4:  darkgreen;
+$title-principal: "Montserrat", sans-serif;  
+$color-rrss:(
+        insta: #f8037e,
+        face: #0a0a97,
+        twit: #000000,
+        whats: #07f142,    
+);
+
+@each $rrss, $col-rrss in $color-rrss{
+        .redsoc-#{$rrss}{
+        color: $col-rrss;
+        }
+}
+$talles: (
+        chico: 12px,
+        base: 20px,
+        grande: 50px,
+)

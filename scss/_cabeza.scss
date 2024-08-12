@@ -1,0 +1,56 @@
+.navprincipal {
+  @include alineacion (flex, center, space-between);
+  @include medidas(100%, auto);
+  font-weight: 500;
+    .navbar-brand img {
+    @include medidas(80px, auto); 
+    margin: 10px;
+  }
+  
+  .navbar-toggler {
+      border: none;  
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .menu-ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        li {
+            list-style: none;
+            margin: 0 20px;
+            a {
+                text-decoration: none;
+                margin-right: 30px;
+                color: $link-color;
+            }
+        }               
+    }
+   
+    .d-flex {
+        display: flex;
+        gap: 10px;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+  }
+}
+.color-nav{
+  background-color: $background-color2;
+}
+.breadcrumb li + li::before {
+  content: "/";
+  margin: 0 0.5rem;
+  color:#000000;
+}
