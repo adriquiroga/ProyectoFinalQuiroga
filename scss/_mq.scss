@@ -12,6 +12,24 @@
           "sexto"
           "quinto quinto";
     }
+    .footerbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      .footerbar-img {
+        margin-bottom: 1rem;
+      }
+  
+      .footer-1, .footer-2 {
+        margin-bottom: 1rem;
+        width: 100%; 
+      }
+    }
+  
+    .footer-1 p, .footer-2 p {
+      margin-bottom: 0.5rem;
+    }
 }  
 @media (max-width: 480px) {
   .video {
@@ -28,6 +46,9 @@
         "sexto"
         "quinto";
   }    
+  .grid-item {
+    text-align: center; 
+  }
   .imagenes img {
       display: flex;
       flex-direction: column;
@@ -39,5 +60,15 @@
       @include medidas(auto, auto);  
       @include alineacion (flex, center, center);
       justify-content: center;
+  }
+  .footerbar {
+    .footer-1, .footer-2 {
+      font-size: 0.875rem; 
+    }
+    
+    .footer-1 a, .footer-2 a {
+      display: block;
+      margin: 0.25rem 0; 
+    }
   }
 }

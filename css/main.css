@@ -498,6 +498,21 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "primero " "segundo segundo" "tercero cuarto" "sexto" "quinto quinto";
   }
+  .footerbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerbar .footerbar-img {
+    margin-bottom: 1rem;
+  }
+  .footerbar .footer-1, .footerbar .footer-2 {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .footer-1 p, .footer-2 p {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 480px) {
   .video {
@@ -507,6 +522,9 @@ h2 {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-areas: "primero " "segundo" "tercero" "cuarto" "sexto" "quinto";
+  }
+  .grid-item {
+    text-align: center;
   }
   .imagenes img {
     display: flex;
@@ -522,6 +540,13 @@ h2 {
     align-items: center;
     justify-content: center;
     justify-content: center;
+  }
+  .footerbar .footer-1, .footerbar .footer-2 {
+    font-size: 0.875rem;
+  }
+  .footerbar .footer-1 a, .footerbar .footer-2 a {
+    display: block;
+    margin: 0.25rem 0;
   }
 }
 
